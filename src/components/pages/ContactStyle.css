@@ -1,0 +1,62 @@
+.contact-content {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+form {
+  display: flex;
+  gap: 20px;
+  width: 60%;
+  flex-wrap: wrap;
+}
+form input,
+textarea {
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+form input:first-child {
+  width: calc(50% - 10px);
+}
+form input:nth-child(2) {
+  width: calc(50% - 10px);
+}
+textarea {
+  height: 100px;
+}
+form input:last-child {
+  width: 100%;
+  background-color: var(--pgColor);
+}
+.Contact .data {
+  width: 35%;
+}
+.data-box {
+  margin-bottom: 10px;
+}
+.data-box h2 {
+  color: white;
+}
+.data-box p:nth-child(2) {
+  color: var(--textColor);
+  margin: 15px 0;
+}
+.data-box p:nth-child(3) {
+  color: var(--textColor);
+}
+@media (max-width: 760px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  form {
+    width: 100%;
+  }
+  .Contact .data {
+    width: 100%;
+    text-align: center;
+  }
+}

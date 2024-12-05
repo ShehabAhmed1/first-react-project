@@ -1,0 +1,36 @@
+.testimonials {
+  background-image: url("/public/imgs/home-bg.png");
+}
+
+.slick-slider {
+  transform: translate(20px, 50%);
+  width: calc(100% - 40px);
+}
+.person {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.person img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--titelsColor);
+  padding: 10px;
+}
+.person h2 {
+  margin: 10px 0;
+  color: white;
+}
+
+.person p {
+  font-size: 23px;
+  color: var(--titelsColor);
+}
+.person .text {
+  margin-top: 10px;
+  color: var(--textColor);
+  text-align: center;
+  font-size: 18px;
+}

@@ -1,0 +1,34 @@
+.home {
+  background-image: url("/public/imgs/home-bg.png");
+  min-height: calc(100vh - 158px);
+}
+
+.home .homecontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+.home .homecontent h3 {
+  text-align: center;
+  color: white;
+}
+.home .homecontent h1 {
+  text-align: center;
+  color: var(--titelsColor);
+  font-size: 50px;
+  margin: 10px 0;
+}
+.home .homecontent p {
+  text-align: center;
+  color: var(--textColor);
+  margin: 15px 0;
+  line-height: 26px;
+}
+
+@media (max-width: 760px) {
+  .home .homecontent h1 {
+    font-size: 25px;
+  }
+}

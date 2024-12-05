@@ -1,38 +1,114 @@
-.App {
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --titelsColor: #e0a80d;
+  --textColor: #b2bfca;
+  --pgColor: #353636;
+  --cardsColor: #212222;
+}
+
+body {
+  background-color: #353636;
+  overflow-x: hidden;
+}
+/* الحاوية الرئيسية */
+.maincontainer {
+  margin: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  max-width: 1300px;
+  position: relative;
+  min-height: inherit;
+}
+
+/* الشاشات الصغيرة أقل من 426px */
+@media (max-width: 426px) {
+  .maincontainer {
+    padding: 0 5px;
+    max-width: 100%;
+  }
+}
+
+/* الشاشات بين 427px و 769px */
+@media (min-width: 427px) and (max-width: 769px) {
+  .maincontainer {
+    padding: 0 15px;
+    max-width: 730px;
+  }
+}
+
+/* الشاشات بين 770px و 1026px */
+@media (min-width: 770px) and (max-width: 1026px) {
+  .maincontainer {
+    padding: 0 20px;
+    max-width: 1000px;
+  }
+}
+
+/* الشاشات الأكبر من 1026px (الشاشات الكبيرة) */
+@media (min-width: 1027px) {
+  .maincontainer {
+    padding: 0 30px;
+  }
+}
+
+/******main titel********/
+.main-titel {
+  color: var(--titelsColor);
+  font-size: 40px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*******pages*******/
+.home,
+.about,
+.services,
+.portfolio,
+.testimonials,
+.Blog,
+.Contact,
+footer {
+  min-height: calc(100vh - 158px);
+  transform: translateY(58px);
+  padding: 50px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*********btns***********/
+.cv,
+.option {
+  text-align: center;
   color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  width: 30%;
+  border: 2px solid var(--titelsColor);
+  padding: 12px 15px;
+  border-radius: 30px;
+  margin: 15px auto;
+  background-color: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.cv:hover,
+.option:hover {
+  background-color: var(--titelsColor);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 450px) {
+  .cv,
+  .option {
+    width: 80%;
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 452px) and (max-width: 770px) {
+  .cv,
+  .option {
+    width: 50%;
   }
 }

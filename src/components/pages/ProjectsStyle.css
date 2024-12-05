@@ -1,0 +1,33 @@
+.Projects {
+  padding: 20px 50px;
+  margin-top: 30px;
+  background-image: url(/public/imgs/some-facts-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Projects-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 760px) {
+  .Projects-content {
+    flex-direction: column;
+  }
+  .Projects {
+    padding: 0;
+  }
+}
+.Projects-content .box {
+  color: white;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.Projects-content .box .pnum {
+  color: var(--titelsColor);
+  font-size: 50px;
+}
